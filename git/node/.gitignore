@@ -1,0 +1,23 @@
+node_modules
+
+#random macos file - not needed for dev
+.DS_Store
+
+# vscode workspace settings
+.vscode
+
+package-lock.json
+
+# Testing coverage
+coverage
+
+# we love yarn 
+yarn.lock
+yarn-error.lock
+yarn-error.log
+
+# npm (just in case):
+package-lock.json
+
+#todos
+.todo
