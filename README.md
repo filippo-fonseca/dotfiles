@@ -1,2 +1,3 @@
 # dotfiles
-🧪 My dotfiles.
+
+🧪 My configuration files for software engineering.
