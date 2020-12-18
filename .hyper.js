@@ -4,11 +4,13 @@ module.exports = {
     // or `'canary'` for less polished but more frequent updates
     updateChannel: 'stable',
 
+    opacity: 1,
+
     // default font size in pixels for all tabs
     fontSize: 12,
 
     // font family with optional fallbacks
-    fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: 'Fira Code',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -142,7 +144,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [],
+  plugins: ["hyper-opacity"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
