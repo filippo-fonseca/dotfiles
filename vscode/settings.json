@@ -1,0 +1,39 @@
+{
+    "workbench.colorTheme": "Dracula",
+    "editor.formatOnSave": true,
+    "window.zoomLevel": 0,
+    "workbench.iconTheme": "vscode-icons",
+    "terminal.integrated.fontFamily": "monospace",
+    "tabnine.experimentalAutoImports": true,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.fontLigatures": true,
+    "stories.username": "filippo-fonseca",
+    "stories.ffmpeg-binary": "/Users/filippofonseca/ffmpeg",
+    "editor.fontFamily": "‘Fira Code’, Consolas, ‘Courier New’, monospace",
+    "todo-tree.tree.showScanModeButton": false,
+    "files.associations": {
+        ".tsx": "typescriptreact",
+        ".jsx": "javascriptreact",
+        "*.tsx": "typescriptreact",
+        "*.ts": "typescript"
+    },
+    "json.schemas": [],
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.fontWeight": "normal",
+    "discord.detailsDebugging": "🌳 Editing {filename}",
+    "discord.lowerDetailsEditing": "🧪 On line {currentline} of {totallines}",
+    "discord.detailsEditing": "Editing {filename} for {totaltime}",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+}
