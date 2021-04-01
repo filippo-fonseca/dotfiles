@@ -1,5 +1,5 @@
 # dotfiles
 
-🧪 My configuration files for software engineering.
+🧪 My dotfiles power my entire software development experience!
 
 Feel free to use. :)
