@@ -73,6 +73,22 @@ plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
+# Example aliases
+alias zsh="code ~/.zshrc"
+alias work="cd /home/Projects/work/"
+alias dev="clear && npm run dev"
+alias build="clear && npm run build"
+alias start="clear && npm start"
+alias dc="docker-compose up"
+
+# start in my directory
+cd /Users/filippofonseca/Developer && clear
+
+cfonts "Welcome back," --align "left" --lineHeight "0.5" -f tiny
+
+# show my name bc why not :D
+cfonts "FILIPPO." --align "left" --lineHeight="0.5"
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
