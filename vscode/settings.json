@@ -1,39 +1,311 @@
 {
-    "workbench.colorTheme": "Dracula",
-    "editor.formatOnSave": true,
-    "window.zoomLevel": 0,
-    "workbench.iconTheme": "vscode-icons",
-    "terminal.integrated.fontFamily": "monospace",
-    "tabnine.experimentalAutoImports": true,
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.fontLigatures": true,
-    "stories.username": "filippo-fonseca",
-    "stories.ffmpeg-binary": "/Users/filippofonseca/ffmpeg",
-    "editor.fontFamily": "‘Fira Code’, Consolas, ‘Courier New’, monospace",
-    "todo-tree.tree.showScanModeButton": false,
-    "files.associations": {
-        ".tsx": "typescriptreact",
-        ".jsx": "javascriptreact",
-        "*.tsx": "typescriptreact",
-        "*.ts": "typescript"
-    },
-    "json.schemas": [],
-    "workbench.editorAssociations": [
+  "terminal.integrated.fontFamily": "monospace",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.autoClosingBrackets": "always"
+  },
+  "editor.fontLigatures": true,
+  "stories.username": "filippo-fonseca",
+  "stories.ffmpeg-binary": "/Users/filippofonseca/ffmpeg",
+  // "editor.fontFamily": "‘Fira Code’, Consolas, ‘Courier New’, monospace",
+  // "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "Dank Mono",
+  "json.schemas": [],
+
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "[dart]": {
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.formatOnSave": true
+  },
+  "editor.fontWeight": "normal",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "liveshare.authenticationProvider": "GitHub",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "kite.showWelcomeNotificationOnStartup": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "discord.largeImage": "✨ Editing a {LANG} file",
+  "discord.largeImageIdling": "⏱ Idling",
+  "discord.detailsEditing": "💻 Editing {dir_name}/{file_name}",
+  "discord.lowerDetailsEditing": "📄 line: {current_line}/{total_lines} - Branch: {git_branch} - {file_size}",
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+  "editor.useTabStops": false,
+  "editor.autoClosingBrackets": "always", // This could cause issues on Windows
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.autoClosingBrackets": "always"
+  },
+  "files.associations": {
+    ".tsx": "typescriptreact",
+    ".jsx": "javascriptreact",
+    "*.tsx": "typescriptreact",
+    "*.ts": "typescript"
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "typescript.preferences.quoteStyle": "single",
+  "tabnine.experimentalAutoImports": true,
+  "dart.previewFlutterUiGuides": true,
+  "dart.openDevTools": "flutter",
+  "dart.debugExternalLibraries": false,
+  "dart.debugSdkLibraries": false,
+  "dart.warnWhenEditingFilesOutsideWorkspace": false,
+  "cSpell.userWords": [
+    "Avenir",
+    "binom",
+    "boxplot",
+    "chewie",
+    "classpath",
+    "cmds",
+    "cocoapods",
+    "codegen",
+    "Coronavirus",
+    "corrcoef",
+    "countplot",
+    "COVID",
+    "Cupertino",
+    "displot",
+    "expon",
+    "filippofonseca",
+    "Firestore",
+    "geocoder",
+    "Hasura",
+    "heatmap",
+    "interquartile",
+    "lastfm",
+    "linregress",
+    "lksdflsdflkasjdfl",
+    "lmplot",
+    "markmusic",
+    "matplotlib",
+    "Mixins",
+    "mobx",
+    "multiscreen",
+    "Myracle",
+    "nullsafety",
+    "numpy",
+    "Overfitting",
+    "pairplot",
+    "postgresql",
+    "pyplot",
+    "quizzler",
+    "redicalweb",
+    "savefig",
+    "Scikit",
+    "scipy",
+    "seaborn",
+    "semibold",
+    "Spotify",
+    "swiper",
+    "twilio",
+    "twiml",
+    "widget's",
+    "xsticklabels",
+    "Zyndicate"
+  ],
+  "todo-tree.tree.showScanModeButton": false,
+  //"discord.detailsEditing": "⌨️ Editing {workspace}",
+  //"discord.lowerDetailsEditing": "📍On line {currentline} of ${totallines}",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "editor.inlineSuggest.enabled": true,
+  "terminal.integrated.gpuAcceleration": "off",
+  "vscode_vibrancy.theme": "Dark (Only Subbar)",
+  "customizeUI.activityBar": "bottom",
+  "customizeUI.moveStatusbar": true,
+  "customizeUI.titleBar": "inline", // This could cause issues on Windows
+  "window.titleBarStyle": "native", // This could cause issues on Windows
+  "customizeUI.stylesheet": {
+    // CSS could also potentially cause issues on Windows. Only tried it on macOS Monterey.
+    "body.inline-title-bar .monaco-workbench:not(.fullscreen) .sidebar .composite.title": "background: rgba(0, 0, 0, 0) !important;",
+    ".statusbar-item.left.has-background-color.first-visible-item": "background-color: rgba(37, 37, 38, 0) !important;",
+    ".monaco-workbench .part > .title": "background: rgba(0, 0, 0, 0) !important;",
+    "body.inline-title-bar:not(.activity-bar-at-bottom) .monaco-workbench:not(.fullscreen) .activitybar:not(.right) .activity-bar-placeholder": "background: rgba(0, 0, 0, 0) !important;",
+    ".monaco-list .monaco-list-row": "border-radius: 6px !important;",
+    ".part.statusbar": "background-color: rgba(37, 37, 38, 0) !important;",
+    ".monaco-workbench .part.panel": "border-radius: 6px !important; margin-top: 6px !important; height: calc(100% - 6px) !important; width: calc(100% - 6px) !important; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;",
+    "#workbench.parts.editor > .content": "border-bottom-left-radius: 6px !important;",
+    ".monaco-workbench .part.panel.bottom .composite.title": "border-top-color: rgba(128, 128, 128, 0) !important;",
+    ".parts.editor > div.content > div.grid-view-container > div > div > div > div.split-view-container > div": "width: calc(100% - 6px) !important;",
+    ".part.editor.has-watermark": "height: calc(100% - 6px) !important; margin-top: 6px !important; border-radius: 6px !important; width: calc(100% - 6px) !important; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;"
+  },
+  "vscode_vibrancy.opacity": 0.01,
+  "vscode_vibrancy.type": "menu",
+
+  "workbench.colorTheme": "GitHub Dark Default",
+  "editor.tokenColorCustomizations": {
+    "[GitHub Dark Default]": {
+      "functions": "#FF9B50",
+      "variables": "#C2CBD3",
+      "numbers": "#FFD400",
+      "textMateRules": [
         {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
+          "name": "Markdown Titles",
+          "scope": "entity.name.section.markdown",
+          "settings": {
+            "foreground": "#5dcdfd"
+          }
+        },
+        {
+          "name": "Markdown Title Hash",
+          "scope": "punctuation.definition.heading.markdown",
+          "settings": {
+            "foreground": "#1ea8fc"
+          }
+        },
+        {
+          "name": "Markdown Raw",
+          "scope": "markup.raw.inline.markdown",
+          "settings": {
+            "foreground": "#cccccc"
+          }
+        },
+        {
+          "name": "Markdown bold stars",
+          "scope": [
+            "punctuation.definition.bold.markdown",
+            "punctuation.definition.italic.markdown"
+          ],
+          "settings": {
+            "foreground": "#1ea8fc"
+          }
+        },
+        {
+          "name": "Markdown link title braces",
+          "scope": [
+            "punctuation.definition.string.begin.markdown",
+            "punctuation.definition.string.end.markdown"
+          ],
+          "settings": {
+            "foreground": "#1ea8fc"
+          }
+        },
+        {
+          "name": "Markdown link braces",
+          "scope": "punctuation.definition.metadata.markdown",
+          "settings": {
+            "foreground": "#1ea8fc"
+          }
+        },
+        {
+          "name": "Markdown link",
+          "scope": [
+            "markup.underline.link.markdown",
+            "markup.underline.link.image.markdown",
+            "meta.image.inline.markdown"
+          ],
+          "settings": {
+            "foreground": "#1ea8fc",
+            "fontStyle": ""
+          }
+        },
+        {
+          "name": "Markdown bold/italic",
+          "scope": ["markup.bold.markdown", "markup.italic.markdown"],
+          "settings": {
+            "foreground": "#1ea8fc"
+          }
+        },
+        {
+          "name": "Markdown bold/italic",
+          "scope": "markup.italic.markdown",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "name": "Markdown bold/italic",
+          "scope": "markup.bold.markdown",
+          "settings": {
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "name": "Markdown pre",
+          "scope": "markup.raw.block.markdown",
+          "settings": {
+            "foreground": "#664e4d"
+          }
+        },
+        {
+          "scope": "entity.name",
+          "settings": {
+            "foreground": "#42C6FF", // true / false
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "variable",
+          "settings": {
+            "foreground": "#FF2E97", // true / false
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "variable.parameter",
+          "settings": {
+            "foreground": "#EEEEEE", // true / false
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "constant",
+          "settings": {
+            "foreground": "#DF85FF", // true / false
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "keyword.control",
+          "settings": {
+            "foreground": "#FF2E97", // Return
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "keyword.operator",
+          "settings": {
+            "foreground": "#FF2AFC", // :, <>
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "keyword",
+          "settings": {
+            "foreground": "#FF2AFC", // :, <>
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "string",
+          "settings": {
+            "foreground": "#7882CF" // "hello world"
+          }
         }
-    ],
-    "liveServer.settings.donotShowInfoMsg": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.fontWeight": "normal",
-    "discord.detailsDebugging": "🌳 Editing {filename}",
-    "discord.lowerDetailsEditing": "🧪 On line {currentline} of {totallines}",
-    "discord.detailsEditing": "Editing {filename} for {totaltime}",
-    "typescript.updateImportsOnFileMove.enabled": "always",
+      ]
+    }
+  },
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "window.zoomLevel": 1
 }
