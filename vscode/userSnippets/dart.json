@@ -1,0 +1,55 @@
+{
+  "MobX Store": {
+    "prefix": "ms",
+    "body": [
+      "import 'package:mobx/mobx.dart';",
+      "",
+      "part '${1}.store.g.dart';",
+      "",
+      "class ${1/(.*)/${1:/pascalcase}/g}Store extends _${1/(.*)/${1:/pascalcase}/g}Store with _$${1/(.*)/${1:/pascalcase}/g}Store {}",
+      "",
+      "abstract class _${1/(.*)/${1:/pascalcase}/g}Store with Store {",
+      "  ",
+      "}"
+    ],
+    "description": "MobX Store"
+  },
+  "Initilize Core": {
+    "prefix": "cre",
+    "body": [
+      "late Core core;",
+      "",
+      "@override",
+      "void initState(){",
+      "",
+      "super.initState();",
+      "",
+      "core = Provider.of<Core>(context, listen: false);",
+      "}"
+    ],
+    "description": "This action will initialize core into any statefull widget"
+  },
+  "Add langauge": {
+    "prefix": "lng",
+    "body": [
+      "core.utils.language.langMap[core.state.userPreferences.language]!"
+    ],
+    "description": "This action will add the boilerplate needed for adding language"
+  },
+  "Initialize Stream": {
+    "prefix": "stre",
+    "body": [
+      "late Stream stream;",
+      "",
+      "void listen() {",
+      "stream = core.providers.client.subscribe(",
+      "SubscriptionOptions(",
+      "document: gql(core.providers.${1}),",
+      "),",
+      ");",
+      "stream.listen((event) {});",
+      "}"
+    ],
+    "description": "This action will initialize a stream to fetch from the Hasura database"
+  }
+}
