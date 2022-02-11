@@ -13,7 +13,7 @@
   "json.schemas": [],
 
   "liveServer.settings.donotShowInfoMsg": true,
-  "workbench.startupEditor": "newUntitledFile",
+  "workbench.startupEditor": "newUntitledFile"iii,
   "[dart]": {
     "editor.defaultFormatter": "Dart-Code.dart-code",
     "editor.formatOnSave": true
@@ -135,7 +135,6 @@
   "customizeUI.titleBar": "inline", // This could cause issues on Windows
   "window.titleBarStyle": "native", // This could cause issues on Windows
   "customizeUI.stylesheet": {
-    // CSS could also potentially cause issues on Windows. Only tried it on macOS Monterey.
     "body.inline-title-bar .monaco-workbench:not(.fullscreen) .sidebar .composite.title": "background: rgba(0, 0, 0, 0) !important;",
     ".statusbar-item.left.has-background-color.first-visible-item": "background-color: rgba(37, 37, 38, 0) !important;",
     ".monaco-workbench .part > .title": "background: rgba(0, 0, 0, 0) !important;",
@@ -307,5 +306,6 @@
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },
+  "editor.accessibilitySupport": "on",
   "window.zoomLevel": 1
 }
