@@ -1,7 +1,13 @@
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the start of this file.
+[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
+#### END FIG ENV VARIABLES ####
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/filippofonseca/.oh-my-zsh" 
+export ZSH="/Users/filippofonseca/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -19,9 +25,7 @@ ZSH_THEME="robbyrussell"
 # CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will b:q
-# :q
-# interchangeable.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
@@ -46,6 +50,8 @@ ZSH_THEME="robbyrussell"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
+# Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
+# See https://github.com/ohmyzsh/ohmyzsh/issues/5765
 # COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
@@ -69,25 +75,9 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
-# Example aliases
-alias zsh="code ~/.zshrc"
-alias work="cd /home/Projects/work/"
-alias dev="clear && npm run dev"
-alias build="clear && npm run build"
-alias start="clear && npm start"
-alias dc="docker-compose up"
-
-# start in my directory
-cd /Users/filippofonseca/Developer && clear
-
-cfonts "Welcome back," --align "left" --lineHeight "0.5" -f tiny
-
-# show my name bc why not :D
-cfonts "FILIPPO." --align "left" --lineHeight="0.5"
 
 # User configuration
 
@@ -111,23 +101,19 @@ cfonts "FILIPPO." --align "left" --lineHeight="0.5"
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+alias commit="/Users/filippofonseca/github.sh"
+alias start="yarn start"
+alias dev="yarn dev"
+alias add="git add ."
+alias push="git push"
+alias install="yarn add"
 # Example aliases
+alias mbx="flutter pub run build_runner build --delete-conflicting-outputs"
 # alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# alias ohmyzsh="mate ~/.oh-my-zsh
+  eval "$(starship init zsh)"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/filippofonseca/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/filippofonseca/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/filippofonseca/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/filippofonseca/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-#
-
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the end of this file.
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####
