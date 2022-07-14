@@ -13,7 +13,7 @@
   "json.schemas": [],
 
   "liveServer.settings.donotShowInfoMsg": true,
-  "workbench.startupEditor": "newUntitledFile"iii,
+  "workbench.startupEditor": "newUntitledFile",
   "[dart]": {
     "editor.defaultFormatter": "Dart-Code.dart-code",
     "editor.formatOnSave": true
@@ -32,7 +32,8 @@
     "*": true,
     "yaml": false,
     "plaintext": false,
-    "markdown": false
+    "markdown": false,
+    "typescriptreact": true
   },
   "editor.useTabStops": false,
   "editor.autoClosingBrackets": "always", // This could cause issues on Windows
@@ -149,8 +150,6 @@
   },
   "vscode_vibrancy.opacity": 0.01,
   "vscode_vibrancy.type": "menu",
-
-  "workbench.colorTheme": "GitHub Dark Default",
   "editor.tokenColorCustomizations": {
     "[GitHub Dark Default]": {
       "functions": "#FF9B50",
@@ -307,5 +306,10 @@
     "FIG_NEW_SESSION": "1"
   },
   "editor.accessibilitySupport": "on",
+  "audioCues.volume": 0,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "workbench.colorTheme": "Outrun Night",
   "window.zoomLevel": 1
 }
