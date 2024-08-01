@@ -4,6 +4,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.autoClosingBrackets": "always"
   },
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
   "editor.fontLigatures": true,
   "stories.username": "filippo-fonseca",
   "stories.ffmpeg-binary": "/Users/filippofonseca/ffmpeg",
@@ -33,7 +34,8 @@
     "yaml": false,
     "plaintext": false,
     "markdown": false,
-    "typescriptreact": true
+    "typescriptreact": true,
+    "python": true
   },
   "editor.useTabStops": false,
   "editor.autoClosingBrackets": "always", // This could cause issues on Windows
@@ -47,7 +49,7 @@
     "*.tsx": "typescriptreact",
     "*.ts": "typescript"
   },
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "eq-material-theme-icons-palenight",
   "editor.formatOnSave": true,
   "prettier.singleQuote": true,
   "prettier.jsxSingleQuote": true,
@@ -303,13 +305,48 @@
     }
   },
   "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
+    "FIG_NEW_SESSION": "1",
+    "Q_NEW_SESSION": "1"
   },
   "editor.accessibilitySupport": "on",
-  "audioCues.volume": 0,
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
-  "workbench.colorTheme": "Outrun Night",
-  "window.zoomLevel": 1
+  "workbench.colorTheme": "poimandres",
+  "security.workspace.trust.untrustedFiles": "open",
+  "window.zoomLevel": 1,
+  "prettier.quoteProps": "preserve",
+  "prisma.showPrismaDataPlatformNotification": false,
+  "liveshare.accessibility.soundsEnabled": false,
+  "liveshare.accessibility.accessibilityFeaturesEnabled": "off",
+  "accessibility.signals.lineHasBreakpoint": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasWarning": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasInlineSuggestion": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasFoldedArea": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasError": {
+    "sound": "off"
+  },
+  "accessibility.signals.positionHasWarning": {
+    "sound": "off"
+  },
+  "accessibility.signals.noInlayHints": {
+    "sound": "off"
+  },
+  "accessibility.signals.positionHasError": {
+    "sound": "off"
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "editor.formatOnPaste": true,
+  "code-runner.runInTerminal": true,
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  }
 }
